@@ -6,6 +6,8 @@ import pythoncom
 import win32com.client
 from win32com.client import Dispatch, GetActiveObject
 
+from dstream_excel.excel.path import get_excel_path
+from dstream_excel.excel.wb_template import XLSX_TEMPLATE_BINARY
 from .exceptions import NoExcelWorkbookException
 
 
@@ -80,9 +82,20 @@ def _get_excel_running_workbook(workbook_name):
 def new_excel_command():
     ### TEMP
     # Need to not hardcode filepaths. Can generalize by writing functions to find excel and create blank workbook
-    excel_filepath = r'C:\Program Files (x86)\Microsoft Office\Office16\EXCEL.EXE'
-    workbook_filepath = r'C:\Users\derobertisna.UFAD\Dropbox (Personal)\UF\Andy\ETF Project\Temp\Book1.xlsx'
+    excel_filepath = get_excel_path()
+
+    # Need excel opening an empty workbook
+    wb_home_path = os.path.sep.join(['~','Book1.xlsx'])
+    workbook_filepath = os.path.expanduser(wb_home_path)
+    if not os.path.exists(workbook_filepath):
+        create_empty_workbook(workbook_filepath)
+
     return _new_excel_command(excel_filepath, workbook_filepath)
+
+
+def create_empty_workbook(outpath: str):
+    with open(outpath, 'wb') as f:
+        f.write(XLSX_TEMPLATE_BINARY)
 
 
 def _new_excel_command(excel_filepath, workbook_filepath):
