@@ -1,0 +1,2 @@
+class NoExcelWorkbookException(Exception):
+    pass
