@@ -6,8 +6,8 @@ import pythoncom
 import win32com.client
 from win32com.client import Dispatch, GetActiveObject
 
-from dstream_excel.excel.path import get_excel_path
-from dstream_excel.excel.wb_template import XLSX_TEMPLATE_BINARY
+from exceldriver import get_excel_path
+from exceldriver.wb_template import XLSX_TEMPLATE_BINARY
 from .exceptions import NoExcelWorkbookException
 
 
