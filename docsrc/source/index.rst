@@ -3,10 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Quick Start Example documentation!
-*********************************************
+Welcome to Python Excel Driver Documentation!
+*************************************************************
 
-Some intro text. To get started, look here.
+To get started, look here.
 
 .. toctree::
 
@@ -16,31 +16,14 @@ Some intro text. To get started, look here.
 An overview
 ===========
 
+For usage, see :ref:`tutorial`. The main functions are highlighted here.
 
-My Module
-------------
-
-Some highlighted functionality from my module.
-
-This is a simple example::
-
-    import py_qs_example
-
-    obj = py_qs_example.mymodule.ExampleClass(5, int)
-    print('done')
+[note, add other main functions]
 
 .. autosummary::
 
-      py_qs_example.mymodule.ExampleClass
-      py_qs_example.mymodule.example_function
+      exceldriver.workbook.create.get_workbook_and_worksheet
 
-My Package
-----------------
-
-.. autosummary::
-
-      py_qs_example.mypackage.module.ExampleClass2
-      py_qs_example.mypackage.module.example_function2
 
 API Documentation
 ------------------

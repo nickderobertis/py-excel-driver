@@ -2,26 +2,25 @@
 # Sphinx configuration is in the docsrc folder
 
 # Main package name
-PACKAGE_NAME = 'py_qs_example'
+PACKAGE_NAME = 'exceldriver'
 
 # Package version in the format (major, minor, release)
-PACKAGE_VERSION_TUPLE = (0, 1, 9)
+PACKAGE_VERSION_TUPLE = (0, 1, 0)
 
 # Short description of the package
-PACKAGE_SHORT_DESCRIPTION = 'Python package PyPi Sphinx quickstart example app'
+PACKAGE_SHORT_DESCRIPTION = 'Tool for automating excel actions on Windows'
 
 # Long description of the package
 PACKAGE_DESCRIPTION = """
-This is the example application for a quick start repo which was created by using pypi-sphinx-quickstart.
-Fork the repo at https://github.com/whoopnip/pypi-sphinx-quickstart and edit the conf.py files to bootstrap
-a Python project with PyPi deployment and Sphinx auto documentation already set up.
+This is a tool used to work with Excel from Python. It currently mainly handles starting and stopping
+excel, and getting the active excel instance and workbook so that COM commands can be run on them.
 """
 
 # Author
 PACKAGE_AUTHOR = "Nick DeRobertis"
 
 # Author email
-PACKAGE_AUTHOR_EMAIL = 'mail@example.com'
+PACKAGE_AUTHOR_EMAIL = 'whoopnip@gmail.com'
 
 # Name of license for package
 PACKAGE_LICENSE = 'MIT'
@@ -46,9 +45,8 @@ PACKAGE_CLASSIFIERS = [
 # Add any third party packages you use in requirements here
 PACKAGE_INSTALL_REQUIRES = [
     # Include the names of the packages and any required versions in as strings
-    # e.g.
-    # 'package',
-    # 'otherpackage>=1,<2'
+    'openpyxl',
+    'pypiwin32',
 ]
 
 # Sphinx executes all the import statements as it generates the documentation. To avoid having to install all
@@ -57,10 +55,13 @@ PACKAGE_INSTALL_REQUIRES = [
 # This variable is useful if a package includes multiple packages which need to be ignored.
 DOCS_OTHER_MOCK_IMPORTS = [
     # Include the names of the packages as they would be imported, e.g.
-    # 'package',
+    'pythoncom',
+    'win32com',
+    'pywintypes',
+    'winreg',
 ]
 
 PACKAGE_URLS = {
-    'Code': 'https://github.com/whoopnip/pypi-sphinx-quickstart/',
-    'Documentation': 'https://whoopnip.github.io/pypi-sphinx-quickstart/'
+    'Code': 'https://github.com/whoopnip/py-excel-driver/',
+    'Documentation': 'https://whoopnip.github.io/py-excel-driver/'
 }

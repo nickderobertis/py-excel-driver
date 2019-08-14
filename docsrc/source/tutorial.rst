@@ -1,4 +1,6 @@
-Getting started with py_qs_example
+.. _tutorial:
+
+Getting started with exceldriver
 **********************************
 
 Install
@@ -6,16 +8,12 @@ Install
 
 Install via::
 
-    pip install py_qs_example
+    pip install exceldriver
+
+You must be running Windows and have Excel installed for the package
+to do anything.
 
 Usage
 =========
 
-Some highlighted functionality from my module.
-
-This is a simple example::
-
-    import py_qs_example
-
-    obj = py_qs_example.mymodule.ExampleClass(5, int)
-    print('done')
+[Add usage here]
