@@ -1,0 +1,38 @@
+exceldriver.workbook package
+============================
+
+Submodules
+----------
+
+exceldriver.workbook.create module
+----------------------------------
+
+.. automodule:: exceldriver.workbook.create
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+exceldriver.workbook.exceptions module
+--------------------------------------
+
+.. automodule:: exceldriver.workbook.exceptions
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+exceldriver.workbook.read module
+--------------------------------
+
+.. automodule:: exceldriver.workbook.read
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: exceldriver.workbook
+   :members:
+   :undoc-members:
+   :show-inheritance:
