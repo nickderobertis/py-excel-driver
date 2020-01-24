@@ -8,6 +8,4 @@ excel, and getting the active excel instance and workbook so that COM commands c
 ## Links
 
 See the
-[documentation here.](
-https://whoopnip.github.io/py-excel-driver/
-)
+[documentation here.](https://nickderobertis.github.io/py-excel-driver/)

@@ -62,6 +62,6 @@ DOCS_OTHER_MOCK_IMPORTS = [
 ]
 
 PACKAGE_URLS = {
-    'Code': 'https://github.com/whoopnip/py-excel-driver/',
-    'Documentation': 'https://whoopnip.github.io/py-excel-driver/'
+    'Code': 'https://github.com/nickderobertis/py-excel-driver/',
+    'Documentation': 'https://nickderobertis.github.io/py-excel-driver/'
 }
